@@ -23,8 +23,6 @@ z = odeint(model, z0, t);
 
 D_MAX = np.max(z[:,1]);
 print(D_MAX);
-T_MAX = odeint(model, z0, D_MAX);
-print(T_MAX);
 # plot results
 plt.figure('Result');
 plt.plot(t,z[:,0], 'r-', label='A');
